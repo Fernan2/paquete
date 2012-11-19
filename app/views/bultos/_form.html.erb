@@ -1,0 +1,93 @@
+<%= form_for(@bulto) do |f| %>
+  <% if @bulto.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bulto.errors.count, "error") %> prohibited this bulto from being saved:</h2>
+
+      <ul>
+      <% @bulto.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :descripcion %><br />
+    <%= f.text_field :descripcion %>
+  </div>
+  <div class="field">
+    <%= f.label :nombre_destinatario %><br />
+    <%= f.text_field :nombre_destinatario %>
+  </div>
+  <div class="field">
+    <%= f.label :direccion_envio %><br />
+    <%= f.text_field :direccion_envio %>
+  </div>
+  <div class="field">
+    <%= f.label :cod_postal_envio %><br />
+    <%= f.text_field :cod_postal_envio %>
+  </div>
+  <div class="field">
+    <%= f.label :telefono_destinatario %><br />
+    <%= f.text_field :telefono_destinatario %>
+  </div>
+  <div class="field">
+    <%= f.label :movil_destinatario %><br />
+    <%= f.text_field :movil_destinatario %>
+  </div>
+  <div class="field">
+    <%= f.label :poblacion %><br />
+    <%= f.text_field :poblacion %>
+  </div>
+  <div class="field">
+    <%= f.label :observaciones_entrega %><br />
+    <%= f.text_field :observaciones_entrega %>
+  </div>
+  <div class="field">
+    <%= f.label :nombre_facturacion %><br />
+    <%= f.text_field :nombre_facturacion %>
+  </div>
+  <div class="field">
+    <%= f.label :nif_facturacion %><br />
+    <%= f.text_field :nif_facturacion %>
+  </div>
+  <div class="field">
+    <%= f.label :direccion_facturacion %><br />
+    <%= f.text_field :direccion_facturacion %>
+  </div>
+  <div class="field">
+    <%= f.label :email_facturacion %><br />
+    <%= f.text_field :email_facturacion %>
+  </div>
+  <div class="field">
+    <%= f.label :observaciones_entrega %><br />
+    <%= f.text_field :observaciones_entrega %>
+  </div>
+  <div class="field">
+    <%= f.label :precio_sin_iva %><br />
+    <%= f.text_field :precio_sin_iva %>
+  </div>
+  <div class="field">
+    <%= f.label :iva %><br />
+    <%= f.text_field :iva %>
+  </div>
+  <div class="field">
+    <%= f.label :precio_con_iva %><br />
+    <%= f.text_field :precio_con_iva %>
+  </div>
+  <div class="field fecha_recepcion">
+    <%= f.label :fecha_recepcion %><br />
+    <%= f.datetime_select :fecha_recepcion %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_entrega %><br />
+    <%= f.datetime_select :fecha_entrega %>
+  </div>
+  <div class="field">
+    <%= f.label :historial_incidencias %><br />
+    <%= f.text_area :historial_incidencias %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

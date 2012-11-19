@@ -1,0 +1,59 @@
+<h1>Listing bultos</h1>
+
+<table>
+  <tr>
+    <th>Descripcion</th>
+    <th>Nombre destinatario</th>
+    <th>Direccion envio</th>
+    <th>Cod postal envio</th>
+    <th>Telefono destinatario</th>
+    <th>Movil destinatario</th>
+    <th>Poblacion</th>
+    <th>Observaciones entrega</th>
+    <th>Nombre facturacion</th>
+    <th>Nif facturacion</th>
+    <th>Direccion facturacion</th>
+    <th>Email facturacion</th>
+    <th>Observaciones entrega</th>
+    <th>Precio sin iva</th>
+    <th>Iva</th>
+    <th>Precio con iva</th>
+    <th>Fecha recepcion</th>
+    <th>Fecha entrega</th>
+    <th>Historial incidencias</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @bultos.each do |bulto| %>
+  <tr>
+    <td><%= bulto.descripcion %></td>
+    <td><%= bulto.nombre_destinatario %></td>
+    <td><%= bulto.direccion_envio %></td>
+    <td><%= bulto.cod_postal_envio %></td>
+    <td><%= bulto.telefono_destinatario %></td>
+    <td><%= bulto.movil_destinatario %></td>
+    <td><%= bulto.poblacion %></td>
+    <td><%= bulto.observaciones_entrega %></td>
+    <td><%= bulto.nombre_facturacion %></td>
+    <td><%= bulto.nif_facturacion %></td>
+    <td><%= bulto.direccion_facturacion %></td>
+    <td><%= bulto.email_facturacion %></td>
+    <td><%= bulto.observaciones_entrega %></td>
+    <td><%= bulto.precio_sin_iva %></td>
+    <td><%= bulto.iva %></td>
+    <td><%= bulto.precio_con_iva %></td>
+    <td><%= bulto.fecha_recepcion %></td>
+    <td><%= bulto.fecha_entrega %></td>
+    <td><%= bulto.historial_incidencias %></td>
+    <td><%= link_to 'Show', bulto %></td>
+    <td><%= link_to 'Edit', edit_bulto_path(bulto) %></td>
+    <td><%= link_to 'Destroy', bulto, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Bulto', new_bulto_path %>

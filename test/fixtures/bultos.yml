@@ -1,0 +1,43 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  descripcion: MyString
+  nombre_destinatario: MyString
+  direccion_envio: MyString
+  cod_postal_envio: 1
+  telefono_destinatario: MyString
+  movil_destinatario: MyString
+  poblacion: MyString
+  observaciones_entrega: MyString
+  nombre_facturacion: MyString
+  nif_facturacion: MyString
+  direccion_facturacion: MyString
+  email_facturacion: MyString
+  observaciones_entrega: MyString
+  precio_sin_iva: 9.99
+  iva: 9.99
+  precio_con_iva: 9.99
+  fecha_recepcion: 2011-10-20 09:58:37
+  fecha_entrega: 2011-10-20 09:58:37
+  historial_incidencias: MyText
+
+two:
+  descripcion: MyString
+  nombre_destinatario: MyString
+  direccion_envio: MyString
+  cod_postal_envio: 1
+  telefono_destinatario: MyString
+  movil_destinatario: MyString
+  poblacion: MyString
+  observaciones_entrega: MyString
+  nombre_facturacion: MyString
+  nif_facturacion: MyString
+  direccion_facturacion: MyString
+  email_facturacion: MyString
+  observaciones_entrega: MyString
+  precio_sin_iva: 9.99
+  iva: 9.99
+  precio_con_iva: 9.99
+  fecha_recepcion: 2011-10-20 09:58:37
+  fecha_entrega: 2011-10-20 09:58:37
+  historial_incidencias: MyText

@@ -1,0 +1,2 @@
+module BultosHelper
+end

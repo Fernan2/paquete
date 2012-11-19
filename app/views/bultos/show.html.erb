@@ -1,0 +1,110 @@
+<p id="notice"><%= notice %></p>
+
+<% b=@bulto %>
+<% a = [["Descripción", b.descripcion], ["Nombre destinatario", b.nombre_destinatario]] %>
+
+<% a.each do |par|  %>
+<p>
+  <b><%= par[0] %>:</b>
+  <%= par[1] %>
+</p>
+  
+<%  end  %>
+<p>
+  <b>Descripcion:</b>
+  <%= @bulto.descripcion %>
+</p>
+
+<p>
+  <b>Nombre destinatario:</b>
+  <%= @bulto.nombre_destinatario %>
+</p>
+
+<p>
+  <b>Direccion envio:</b>
+  <%= @bulto.direccion_envio %>
+</p>
+
+<p>
+  <b>Cod postal envio:</b>
+  <%= @bulto.cod_postal_envio %>
+</p>
+
+<p>
+  <b>Telefono destinatario:</b>
+  <%= @bulto.telefono_destinatario %>
+</p>
+
+<p>
+  <b>Movil destinatario:</b>
+  <%= @bulto.movil_destinatario %>
+</p>
+
+<p>
+  <b>Poblacion:</b>
+  <%= @bulto.poblacion %>
+</p>
+
+<p>
+  <b>Observaciones entrega:</b>
+  <%= @bulto.observaciones_entrega %>
+</p>
+
+<p>
+  <b>Nombre facturacion:</b>
+  <%= @bulto.nombre_facturacion %>
+</p>
+
+<p>
+  <b>Nif facturacion:</b>
+  <%= @bulto.nif_facturacion %>
+</p>
+
+<p>
+  <b>Direccion facturacion:</b>
+  <%= @bulto.direccion_facturacion %>
+</p>
+
+<p>
+  <b>Email facturacion:</b>
+  <%= @bulto.email_facturacion %>
+</p>
+
+<p>
+  <b>Observaciones entrega:</b>
+  <%= @bulto.observaciones_entrega %>
+</p>
+
+<p>
+  <b>Precio sin iva:</b>
+  <%= @bulto.precio_sin_iva %>
+</p>
+
+<p>
+  <b>Iva:</b>
+  <%= @bulto.iva %>
+</p>
+
+<p>
+  <b>Precio con iva:</b>
+  <%= @bulto.precio_con_iva %>
+</p>
+
+<p>
+  <b>Fecha recepcion:</b>
+  <%= @bulto.fecha_recepcion %>
+</p>
+
+<p>
+  <b>Fecha entrega:</b>
+  <%= @bulto.fecha_entrega %>
+</p>
+
+<p>
+  <b>Historial incidencias:</b>
+  <%= @bulto.historial_incidencias %>
+</p>
+
+
+<%= link_to 'Edit', edit_bulto_path(@bulto) %> |
+<%= link_to 'Back', bultos_path %>
